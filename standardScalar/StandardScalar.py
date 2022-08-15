@@ -5,6 +5,7 @@ import numpy as np
 Standard Scalar
 
 (Xi - Xmean) / (std of feature(all elements in array,list))
+TODO: More examples
 '''
 
 x = np.array([[-400], [-100], [0], [100], [400]])
