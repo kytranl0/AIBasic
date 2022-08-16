@@ -15,6 +15,9 @@ x1 = np.array([[1,2,3],
 standardscaler = preprocessing.StandardScaler()
 x_scaler = standardscaler.fit_transform(x)
 x_scaler1 = standardscaler.fit_transform(x1)
-
+print("x1[0][0] == ")
+print( (x1[0][0] - np.mean(x1[:,0]))/np.std(x1[:,0]))
+print("x_scaler == ")
 print(x_scaler)
+print("x_scaler1 == ")
 print(x_scaler1)
