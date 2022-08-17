@@ -1,5 +1,6 @@
 from sklearn import preprocessing
 import numpy as np 
+import pandas as pd
 
 '''
 Standard Scalar
@@ -21,3 +22,10 @@ print("x_scaler == ")
 print(x_scaler)
 print("x_scaler1 == ")
 print(x_scaler1)
+
+
+dataset = pd.read_csv('model_development/data/creditcard.csv')
+features = dataset.iloc[:, [29,30]].values
+x_scaler2 = standardscaler.fit_transform(features)
+print("x_scaler2 == ")
+print(x_scaler2)
